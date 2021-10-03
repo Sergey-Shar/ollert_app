@@ -1,0 +1,18 @@
+html {
+    font-size: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: #f9f0da;
+}
+
+.wrapper {
+    height: 100%;
+    background: url("/../src/images/image-backgraund/fullscreen.jpg") 50%/cover no-repeat;
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
