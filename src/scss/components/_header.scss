@@ -1,0 +1,54 @@
+.header {
+    background: rgba(107, 100, 100, 1);
+    height: 50px;
+
+
+    &__flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 50px;
+    }
+
+
+
+    &__search {
+        border: solid 1.5px #ffff;
+        border-radius: 3px 3px 3px 3px;
+        width: 20%;
+        height: 30px;
+        padding-left: 35px;
+        background: rgba(199, 191, 191, 1);
+        font-size: 16px;
+
+
+    }
+
+
+
+
+    &__seach-btn {
+        border: none;
+        outline: none;
+        background: transparent;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+
+        left: 0;
+        cursor: pointer;
+
+        &::before {
+            content: "\f002";
+            font-family: FontAwesome;
+            font-size: 16px;
+            color: #ffff;
+        }
+    }
+
+
+
+    &__clock {}
+}
