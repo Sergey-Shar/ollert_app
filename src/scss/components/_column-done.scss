@@ -1,0 +1,47 @@
+
+.column-done {
+
+    display: flex;
+    flex-direction: column;
+    background: rgba(204, 213, 235, 1);
+    opacity: 0.9;
+    width: 350px;
+    border-radius: 5px;
+    
+
+    &__title {
+        font-size: 2rem;
+        color: rgba(12, 30, 74, 1);
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 10px;
+        margin:10px 0 10px 3.5rem;
+    }
+
+     // &__card-container {
+    // }
+
+ &__btn-done--delete {
+    position: relative;
+    margin-bottom: 5px;
+    margin-left: 2.5rem;
+    padding: 5px 25px 5px 0px;
+    width: 15rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    background: rgba(204, 213, 235, 1);
+    color: rgba(92, 95, 102, 1);
+
+    &:hover {
+      background: rgba(199, 191, 191, 1);
+    }
+    &::before {
+      content: "\f067";
+      position: absolute;
+      left: 10px;
+      font-family: FontAwesome;
+      size: 2px;
+      color: rgba(92, 95, 102, 1);
+    }
+    }
+}
