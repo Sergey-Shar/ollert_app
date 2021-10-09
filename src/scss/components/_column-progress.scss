@@ -1,0 +1,21 @@
+
+.column-progress {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: rgba(204, 213, 235, 1);
+    opacity: 0.9;
+    width: 350px;
+    border-radius: 5px;
+ 
+
+    &__title {
+        font-size: 2rem;
+        color: rgba(12, 30, 74, 1);
+        margin:10px 0 10px 3.5rem;
+        font-family: "Roboto", sans-serif;
+    }
+
+//     &__card-container {
+//     }
+}

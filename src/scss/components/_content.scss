@@ -1,0 +1,13 @@
+.content {
+
+     &__flex-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-basis: auto;
+        margin-top: 50px;
+        min-height: 100%;
+        }
+}
+
+

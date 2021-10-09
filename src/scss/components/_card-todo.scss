@@ -1,0 +1,24 @@
+.card{
+    width: 300px;
+    min-height: 100px;
+    background:#ffff;
+    border-radius: 10px;
+    border: solid 2px black;
+    margin: 10px 0 10px 0;
+
+    &__title{}
+
+    &__description{}
+
+    &__user{}
+
+    &__btn-edit{}
+
+    &__btn-delete{}
+
+    &__btn-progress{}
+
+    &__time{}
+
+}
+
