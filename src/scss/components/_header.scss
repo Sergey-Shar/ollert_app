@@ -21,7 +21,8 @@
     margin-left: 10px;
     background: rgba(199, 191, 191, 1);
     font-size: 1.6rem;
-
+    transition-duration: 0.5s ;
+    
     &:hover {
       background: rgba(224, 215, 215, 1);
     }
@@ -36,12 +37,36 @@
     position: absolute;
     left: 10px;
     cursor: pointer;
-
     &::before {
       content: "\f002";
       font-family: FontAwesome;
       font-size: 16px;
       color: #ffff;
+    }
+    &.hidden {
+      display: none;
+    }
+  }
+
+  &__cancel-btn{
+    display: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+
+    &::before {
+      content: "\f00d";
+      font-family: FontAwesome;
+      font-size: 16px;
+      color: #ffff;
+    }
+    &.show {
+      display: inline;
     }
   }
 

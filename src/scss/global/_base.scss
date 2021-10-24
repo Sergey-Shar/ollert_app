@@ -9,11 +9,12 @@ html {
 .wrapper {
     min-height: 100%;
     overflow: hidden;
-    background: url("/../src/images/image-backgraund/fullscreen.jpg") 50% / cover no-repeat;
+    background: url("/../src/images/image-backgraund/fullscreen.jpg") 50% / cover no-repeat local;
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 }
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
 }
+
