@@ -7,7 +7,10 @@
     opacity: 0.9;
     width: 350px;
     border-radius: 5px;
- 
+    &.swiper-slide{
+      width: 300px !important;
+      
+      }
 
     &__title {
         font-size: 2rem;
@@ -16,6 +19,15 @@
         font-family: "Roboto", sans-serif;
     }
 
-//     &__card-container {
-//     }
+     &__card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-height: 65px;
+        margin: 10px 0 10px 0;
+        &.drag-enter{
+        min-height: 30rem;
+          }
+     }
 }

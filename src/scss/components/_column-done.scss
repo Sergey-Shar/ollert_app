@@ -7,7 +7,10 @@
     opacity: 0.9;
     width: 350px;
     border-radius: 5px;
+    &.swiper-slide{
+     width: 300px !important;
     
+    }
 
     &__title {
         font-size: 2rem;
@@ -17,8 +20,17 @@
         margin:10px 0 10px 3.5rem;
     }
 
-     // &__card-container {
-    // }
+      &__card-container {
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+       min-height: 30px;
+       margin: 10px 0 10px 0;
+       &.drag-enter{
+        min-height: 30rem;
+       }
+     }
 
  &__btn-done--delete {
     position: relative;
@@ -31,7 +43,7 @@
     border-radius: 3px;
     background: rgba(204, 213, 235, 1);
     color: rgba(92, 95, 102, 1);
-
+    transition-duration: 0.5s ;
     &:hover {
       background: rgba(199, 191, 191, 1);
     }

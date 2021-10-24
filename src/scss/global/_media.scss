@@ -1,0 +1,19 @@
+@media (max-width : 768px) {
+    .header__search{
+        opacity: 0;
+        visibility: hidden;
+        &.show-search{
+        opacity: 1;
+        visibility: visible;
+       }
+    }
+    .column-progress{
+        display: none;
+    }
+    .column-done{
+        display: none;
+    }
+    .navi-btn{
+        opacity: 1;
+    }
+}

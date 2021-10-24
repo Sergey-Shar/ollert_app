@@ -1,0 +1,56 @@
+
+.navi-btn{
+   display: flex;
+   justify-content: center;
+   //justify-content: space-between;
+   min-width: 50%;
+   //height: 30px;
+   margin-top: 30px;
+   opacity: 0;
+  
+
+    &__todo {
+        position: relative;
+        min-width: 20%;
+        //margin-top: 6.4rem;
+        &::after {
+            content: '';
+            position: absolute;
+            background:red;
+            height: 7px;
+            width: 50px;
+
+        }
+    }
+
+   
+    &__progress {
+        position: relative;
+        //margin-top: 6.4rem;
+        min-width: 20%;
+        &::after {
+            content: '';
+            position: absolute;
+            background:coral;
+            height: 7px;
+            width: 50px;
+
+        }
+    }
+
+   
+
+    &__done {
+        position: relative;
+        min-width: 50px;
+       // margin-top: 6.4rem;
+        &::after {
+            content: '';
+            position: absolute;
+            background:yellow;
+            height: 7px;
+            width: 50px;
+
+        }
+    }
+}

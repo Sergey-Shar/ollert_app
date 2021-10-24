@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ollert-app</title>
-    <link rel="stylesheet" href="/../src/styles/css/main.min.css">
+    <link rel="stylesheet" href="../src/scss/main.scss"> 
 </head>
 
 <body>
@@ -14,27 +14,33 @@
         <header class="header">
             <div class="container">
                 <div class="header__flex-container">
-                    <input type="search" placeholder="Search" class="header__search">
+                    <input type="text" placeholder="Search" class="header__search">
                     <button type="submit" class="header__seach-btn"></button>
+                    <button type="submit" class="header__cancel-btn"></button>
                     <div class="header__clock"></div>
                 </div>
             </div>
         </header>
+        <div class="navi-btn">
+            <div class="navi-btn__todo" data-btn="todo"></div>
+            <div class="navi-btn__progress" data-btn="progress"></div>
+            <div class="navi-btn__done" data-btn="done"></div>
+        </div>
         <main class="content">
             <div class="container">
                 <div class="content__flex-container">
                     <div class="column-todo">
                         <div class="column-todo__title"> Todo: </div>
-                        <div class="column-todo__card-container"></div>
+                        <div class="column-todo__card-container drop"></div>
                         <button class="column-todo__btn-todo--add">Add card</button>
                     </div>
                     <div class="column-progress">
                         <div class="column-progress__title"> In progress: </div>
-                        <div class="column-progress__card-container"></div>
+                        <div class="column-progress__card-container drop"></div>
                     </div>
                     <div class="column-done">
                         <div class="column-done__title"> Done: </div>
-                        <div class="column-done__card-container"></div>
+                        <div class="column-done__card-container drop"></div>
                         <button class="column-done__btn-done--delete">Delete</button>
                     </div>
                 </div>
@@ -43,7 +49,8 @@
     </div>
     </div>
     <script src="https://kit.fontawesome.com/4376e1be36.js" crossorigin="anonymous"></script>
-    <script  type="module" src="../src/scripts/main.js"></script>
+    <script  type="module" src="../src/scripts/index.js"></script>
+   
 </body>
 
 </html>
